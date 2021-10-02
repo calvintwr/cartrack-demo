@@ -13,7 +13,7 @@ class Logger {
     writeDir    : string
     writeFile   : string
     template    : string
-    options?     : {
+    options?    : {
         [key: string]: any
     }
 

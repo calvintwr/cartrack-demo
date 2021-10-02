@@ -39,7 +39,7 @@ Logger is in `api/src/apps/logger`. The Logger app follows best practice for log
 
 Logger is written in promise style, with modularised templates (under `templates` folder) that can be extended to log other stuff.
 
-Log files are output to `logs/allowed.log` and `logs/rejected.log` after operating the API. If you are running the app using a user that does not have write priviledges, you will need to perform `chmod` or `chown`.
+Log files are output to `api/logs/allowed.log` and `api/logs/rejected.log` after operating the API. If you are running the app using a user that does not have write priviledges, you will need to perform `chmod` or `chown`.
 
 Note: Client-side limited requests will be not logged as they do not reach the server.
 

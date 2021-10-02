@@ -15,10 +15,10 @@ class RateLimit {
 
     quotaWithin = config.quotaWithin
     max         = config.maxRequest
-    loggers      = logger
+    loggers     = logger
     message     = 'Too many requests, please try again later.'
-    store   : Memory    // to use redis or memcache, replace this with another abstraction/adaptor   
-    resetKey: Function
+    store       : Memory    // to use redis or memcache, replace this with another abstraction/adaptor   
+    resetKey    : Function
 
     // keyGenerator takes the request body for generating a unique key.
     // can also be API key or bear token where available.

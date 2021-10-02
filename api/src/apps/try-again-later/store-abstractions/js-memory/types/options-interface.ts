@@ -2,12 +2,12 @@ import { Request, Response, NextFunction } from 'express'
 import Memory from '../Memory'
 
 interface options {
-    quotaWithin?: number
-    max?: number
-    message?: string
-    keyGenerator?: keyGenerator
-    handler?: handler
-    store?: Memory
+    quotaWithin?    : number
+    max?            : number
+    message?        : string
+    keyGenerator?   : keyGenerator
+    handler?        : handler
+    store?          : Memory
 }
 
 type keyGenerator = (req: Request) => string
